@@ -10,11 +10,12 @@
   },
   "author": "michael",
   "license": "ISC",
-  "dependencies":{
-
-  
-    "ejs":"3.1.9",
-    "express":"4.18.2",
-    "nodemon": "3.0.3"
+  "dependencies": {
+    "ejs": "3.1.9",
+    "express": "^4.18.2",
+    "fs": "^0.0.1-security",
+    "http": "^0.0.1-security",
+    "nodemon": "3.0.3",
+    "res": "^0.4.0"
   }
 }
