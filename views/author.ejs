@@ -2,103 +2,237 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" contents="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
     <link rel="stylesheet" href="/main.css" />
     <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
       rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      crossorigin="anonymous"
     />
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+  
+    <div class="frame">
+      <div class="main_frame">
+        <div class="left_frame">
+          <div class="left_1">
+              <div class="left_1-1">
+                  <img src="images/profile.png"  width="156px" height="142px" alt="">
+              </div>
+              <div class="left_1-2">
+                <%=user.name%>
+              </div>
+              <div class="left_1-3">
+                <%=user.profession%>
+              </div>
+              <div class="left_icons">
+                <div class="icon"><a href=""  class="link_href">
+                  <img src="icon/facebook.svg"  alt="icon">
+                </a>
+              </div>
+                <div class="icon">
+                  <a href="" class="link_href">
+                    <img src="icon/instagram.svg"  alt="icon">
+                  </a>
+                </div>
+                <div class="icon">
+                  <a href="" class="link_href">
+                    <img src="icon/twitter.svg" alt="icon">
+                  </a>
+                </div>
+                <div class="icon">
+                  <a href="" class="link_href">
+                    <img src="icon/linkeding.svg"alt="icon">
+                  </a>
+                </div>
+                <div class="icon">
+                  <a href="" class="link_href">
+                    <img src="icon/youtube.svg"  alt="icon">
+                  </a>
+                </div>
+                <div class="icon">
+                  <a href="" class="link_href">
+                    <img src="icon/dribbble.svg" alt="icon">
+                  </a>
+                </div>
+              </div>
 
-    <title>Portfolio</title>
+          </div>
+          <div class="marginer"></div>
+          <div class="left_2">
+              <div class="left_info">
+                  <div class="left_key"><p>Age:  </p></div>
+                  <div class="left_value"><%=user.age%></div>
+              </div>
+              <div class="left_info">
+                  <div class="left_key"><P>Residence:  </P></div>
+                  <div class="left_value"><%=user.residence%></div>
+              </div>
+              <div class="left_info">
+                  <div class="left_key"><p>Freelance:  </p> </div>
+                  <div class="left_value" style="color: green;">Available</div>
+              </div>
+              <div class="left_info">
+                  <div class="left_key"><p>Address:  </p></div>
+                  <div class="left_value"><%=user.adress%></div>
+              </div>
+          </div>
+          <div class="marginer"></div>
+          <div class="left_3">
+            <div class="left_lang">Languages</div>
+              <div class="left_info">
+                  <div class="left_key">Korean</div>
+                  <div class="left_value">90%</div>
+              </div>
+             <div class="liner"><div class="line-1"></div></div> 
 
-   
-</head>
+              <div class="left_info">
+                  <div class="left_key">English</div>
+                  <div class="left_value">60%</div>
+              </div>
+              <div class="line-2"></div>
 
-<body>
-<div class="frame">
-<div class="main_frame">
- <div class="left_frame">
-        <div class ="left_1">
-            <div class="left_1-1">
-                <img src="images/profile.png"  
-                width="156px"
-                height="142px"
-                alt="">
+              <div class="left_info">
+                <div class="left_key">Russian</div>
+                <div class="left_value">50%</div>
+              </div>
+              <div class="line-3"></div>
+          </div>
+          <div class="marginer"></div>
+          <div class="left_4">
+              <div class="left_lang">Skills</div>
+              <div class="left_info">
+                  <div class="left_key">Html</div>
+                  <div class="left_value">95%</div>
+              </div>
+              <div class="line-4"></div>
+
+              <div class="left_info">
+                  <div class="left_key">Css</div>
+                  <div class="left_value">95%</div>
+              </div>
+              <div class="line-5"></div>
+
+              <div class="left_info">
+                <div class="left_key">Nodejs</div>
+                <div class="left_value">80%</div>
+              </div>
+              <div class="line-6"></div>
+
+              <div class="left_info">
+                <div class="left_key">Python</div>
+                <div class="left_value">90%</div>
+              </div>
+              <div class="line-7"></div>
+
+              <div class="left_info">
+                <div class="left_key">Is</div>
+                <div class="left_value">80%</div>
+              </div>
+              <div class="line-8"></div>
+
+          </div>
+          <div class="marginer"></div>
+          <div class="left_5">
+              <div class="left_lang">Extra Skills</div>
+              <div class="extra_skills">
+                  <div class="ex_icon"><img src="icon/7.svg" alt="">Bootstrap, Materialize</div>
+                  <div class="ex_skills"> </div>
+              </div>
+              <div class="extra_skills">
+                <div class="ex_icon"><img src="icon/7.svg" alt="">Styling, Sass</div>
+                <div class="ex_skills"> </div>
+              </div>
+              <div class="extra_skills">
+                <div class="ex_icon"><img src="icon/7.svg" alt="">Django, Flask</div>
+                <div class="ex_skills"> </div>
+              </div>
+              <div class="extra_skills">
+                <div class="ex_icon"><img src="icon/7.svg" alt="">GIT Knowledge</div>
+                <div class="ex_skills"></div>
+              </div>
+          </div>
+          <div class="marginer"></div>
+        </div>
+        <div class="midd_frame">
+            <div class="header">
+                <div class="head_left">
+                      <div class="head_text">Doctor neurologists
+                        in OHSU Hospital </div>
+                      <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Et, volutpat feugiat placerat 
+                        lobortis. Natoque rutrum semper sed suspendisse 
+                        nunc lectus.</div>
+                      <div class="head_btn"><h1>HIRE ME</h1> </div>
+                     
+                </div>
+                <div class="head_right">
+                  <div class="btn_img"><img src="images/myimage.png" alt=""></div>
+                      
+                </div>
             </div>
-            <div class="left_1-2"><%=user.name%></div>
-            <div class="left_1-3"><%=user.profession%></div>
-            <div class="left-icons">
-                <a href="" class="link_href">
-                    <div class="icon">
-                      <img src="icon/facebook.svg" class="icon-1" />
+            <div class="midd_footer">
+                <div class="ser_text"><h1>My Services</h1>
+                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor 
+                  do amet sint. Velit 
+                  officia consequat duis enim velit mollit. 
+                  lorem ipsum</p>
+                </div>
+                <div class="cards">
+                    <div class="card">
+                        <div class="card_icon"><img src="icon/c1.svg" alt=""></div>
+                        <div class="card_h_text">web development</div>
+                        <div class="card_text">blog, e-commerce</div>
                     </div>
-                  </a>
-                  <a href="" class="link_href">
-                    <div class="icon">
-                      <img src="icon/instagram.svg" class="icon-1" />
+                      <div class="card">
+                        <div class="card_icon"><img src="icon/c2.svg" alt=""></div>
+                        <div class="card_h_text">uI/uX design</div>
+                        <div class="card_text">Mobile app, website design</div>
                     </div>
-                  </a>
-                  <a href="" class="link_href">
-                    <div class="icon">
-                      <img src="icon/twitter.svg" class="icon-1" />
+                      <div class="card">
+                        <div class="card_icon"><img src="icon/c3.svg" alt=""></div>
+                        <div class="card_h_text">sound design</div>
+                        <div class="card_text">Voice Over, Beat Making</div>
                     </div>
-                  </a>
-                  <a href="" class="link_href">
-                    <div class="icon">
-                      <img src="icon/linkeding.svg" class="icon-1" />
+                      <div class="card">
+                        <div class="card_icon"><img src="icon/c4.svg" alt=""></div>
+                        <div class="card_h_text">game design</div>
+                        <div class="card_text">Character Design, Props & Objects</div>
                     </div>
-                  </a>
-                  <a href="" class="link_href">
-                    <div class="icon">
-                      <img src="icon/youtube.svg" class="icon-1" />
+                      <div class="card">
+                        <div class="card_icon"><img src="icon/c5.svg" alt=""></div>
+                        <div class="card_h_text">photography</div>
+                        <div class="card_text">portrait, product photography</div>
                     </div>
-                  </a>
-                  <a href="" class="link_href">
-                    <div class="icon">
-                      <img src="icon/dribbble.svg" class="icon-1" />
-                    </div>
-                  </a>
+                    <div class="card">
+                      <div class="card_h_text">advertising</div>
+                      <div class="card_text">Lorem ipsum dolor sit amet, consectetur 
+                        adipiscing elit. Vitae nulla 
+                        diam in ac dictum a urna viverra morbi. </div>
+                      <div class="card_icon"><img src="box_images/order_now.svg" alt=""></div>
+                  </div>
+                  
+               
+                </div>
             </div>
+        </div>
+        <div class="right_frame">
+              <div class="contr"><img src="btn_icon/0.svg" alt=""></div>
+              <div class="nav_icons">
+                    <div class="nav_icon"><a href=""><img src="btn_icon/1svg.svg" alt=""></a></div>
+                    <div class="nav_icon"><a href=""><img src="btn_icon/2.svg" alt=""></a></div>
+                    <div class="nav_icon"><a href=""><img src="btn_icon/3.svg" alt=""></a></div>
+                    <div class="nav_icon"><a href=""><img src="btn_icon/4.svg" alt=""></a></div>
+                    <div class="nav_icon"><a href=""><img src="btn_icon/5.svg" alt=""></a></div>
+                    <div class="nav_icon"><a href=""><img src="btn_icon/6.svg" alt=""></a></div>
+              </div>
 
         </div>
-        <div class ="marginer"></div>
-        <div class="left_2">
-          <div class="left_2-1">
-            <p class="left_items-age item-all">Age:</p>
-            <span><%=user.age%></span>
-          </div>
-          <div class="left_2-1">
-            <p class="left_items-residence item-all">Residence:</p>
-            <span><%=user.residence%></span>
-          </div>
-          <div class="left_2-1">
-            <p class="left_2-freelance item-all">Freelance:</p>
-            <span class="left_2-2">Available</span>
-          </div>
-          <div class="left_2-1">
-            <p class="lft_2-adress item-all">Adress:</p>
-            <span><%=user.adress%></span>
-          </div>
-        </div>
-        <div class ="marginer"></div>
-        <div class ="left_3"></div>
-        <div class ="marginer"></div>
-        <div class ="left_4"></div>
-        <div class ="marginer"></div>
-        <div class ="left_5"></div>
-        <div class ="marginer"></div>
-        
-        
-
+      </div>
     </div>
-    <div class="midd_frame"></div>
-    <div class="right_frame"></div>
 
-
-</div>
-</div>
-</body>
-
+  </body>
 </html>
