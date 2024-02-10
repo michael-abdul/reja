@@ -8,7 +8,7 @@ const suz = (alp,word)=>{
   for(let i = 0; i<word.length;i++){
   if(word[i]===alp){
     count++;
-  }
+ }
 }
   return count;
 };

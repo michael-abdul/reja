@@ -47,12 +47,12 @@ app.get("/sovga", function (req, res) {
   res.end(`<h1>Siz sovg'alar bo'limida emassiz </h1>`);
 });
 
-app.get("/harid", function (req, res) {
-  res.render("harid");
+app.get("/", function (req, res) {
+  res.render("reja");
 });
 
 const server = http.createServer(app);
 let PORT = 3000;
 server.listen(PORT, function () {
-  console.log(`Server is running on port ${PORT}`);
+  console.log(`Server is running on port: ${PORT}, http://localhost:${PORT}`);
 });
