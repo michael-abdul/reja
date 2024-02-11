@@ -1,20 +1,50 @@
+// TASK B: 
+
+// Shunday function tuzing, u 1ta string parametrga ega bolsin, hamda osha stringda qatnashgan raqamlarni sonini bizga return qilsin.
+// MASALAN countDigits("ad2a54y79wet0sfgb9") 7ni return qiladi.
+
+function num(txt) {
+  let count = 0;
+
+  for (let i = 0; i < txt.length; i++) {
+    if (!isNaN(txt[i])) {
+      count++;
+    }
+  }
+  return count;
+}
+
+console.log(num('cat353535553olkjh')); 
+
+
+
+
+
+
+
+
+
+
+
+
+
 // TASK A 
 // Shunday 2 parametrli function tuzing,
 // hamda birinchi parametrdagi leterni ikkinchi parametrdagi suzdan
 // qatnashgan sonni return qilishi kerak buladi
 // Masalan countLetter("e","engineer") 3ni return qiladi
-const suz = (alp,word)=>{
-  let count = 0;
-  for(let i = 0; i<word.length;i++){
-  if(word[i]===alp){
-    count++;
- }
-}
-  return count;
-};
+// const suz = (alp,word)=>{
+//   let count = 0;
+//   for(let i = 0; i<word.length;i++){
+//   if(word[i]===alp){
+//     count++;
+//  }
+// }
+//   return count;
+// };
 
-const result = suz("b", "basketbol");
-console.log(result);
+// const result = suz("b", "basketbol");
+// console.log(result);
 
 //             2- uslub
 // const lett = (let,word)=>{ 
