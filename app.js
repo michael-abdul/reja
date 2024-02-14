@@ -3,20 +3,10 @@ const express = require("express");
 const app = express();
 const res = require("express/lib/response");
 
-// const fs = require("fs"); // 
-
 //MongoDB chaqirish
 const db = require("./server").db();
+const mongodb = require("mongodb");
 
-// let user;
-// fs.readFile("database/user.json", "utf8", (err, data) => {
-
-//   if (err) {
-//     console.log("ERROR:", err);
-//   } else {
-//     user = JSON.parse(data);
-//   }
-// });
 
 
 app.use(express.static("public")); 
@@ -37,24 +27,16 @@ app.post("/create-item", (req, res) => {
     console.log(data.ops);
     res.json(data.ops[0]);
 });
- //res.json({ test: "success" });
 });
 
-// app.get("/author", (req, res) => {
-//   res.render("author", { user: user });
+app.post("/delete-item", (req,res)=>{
+  const id = req.body.id;
+ db.collection("plans").deleteOne({_id: new mongodb.ObjectId(id)}, function(err, data){
+  res.json({state: "success"});
+ })
   
-// });
+});
 
-// app.get("/hello", function (req, res) {
-//   res.end(`<h1 style="background: red">HELLO WORLD by BekzodAli </h1>`);
-// });
-// app.get("/gift", function (req, res) {
-//   res.end(`<h1>Siz sovg'alar bo'limidasiz</h1>`);
-// });
-
-// app.get("/sovga", function (req, res) {
-//   res.end(`<h1>Siz sovg'alar bo'limida emassiz </h1>`);
-// });
 
 app.get("/", function (req, res) {
   console.log('user entered /');
