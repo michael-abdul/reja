@@ -1,48 +1,61 @@
+// TASK-D
+//Shunday function tuzing, u 2ta string parametr ega bolsin, hamda agar har ikkala string bir hil harflardan iborat bolsa true aks holda false qaytarsin
+// MASALAN checkContent("mitgroup", "gmtiprou") return qiladi true;
+
+function str(a, b) {
+  return a.split('').sort().join('') === b.split('').sort().join('');
+}
+
+const e = str('card', 'arcd');
+console.log(e); 
+
+
+
 // Shunday class tuzing tuzing nomi Shop, va uni constructoriga 3 hil mahsulot pass bolsin,
 //  hamda classning 3ta methodi bolsin, biri qoldiq,
 //  biri sotish va biri qabul. Har bir method ishga tushgan vaqt ham log qilinsin.
 // MASALAN: const shop = new Shop(4, 5, 2); shop.qoldiq() return hozir 20:40da 4ta non, 5ta lagmon va 2ta cola mavjud! shop.sotish('non', 3) & shop.qabul('cola', 4) & shop.qoldiq() return hozir 20:50da 1ta non, 5ta lagmon va 6ta cola mavjud!
 
-const moment = require("moment");
-const time = moment().format('HH:mm');
-class Shop{   
+// const moment = require("moment");
+// const time = moment().format('HH:mm');
+// class Shop{   
 
-  //   constructor
-    constructor(ichimlik, qandolat, gusht ) {
-      this.qandolat = qandolat
-      this.gusht = gusht;
-       this.ichimlik = ichimlik;
-    }
+//   //   constructor
+//     constructor(ichimlik, qandolat, gusht ) {
+//       this.qandolat = qandolat
+//       this.gusht = gusht;
+//        this.ichimlik = ichimlik;
+//     }
     
-  //   method
+//   //   method
    
-   qabul(a, num){
-        if( a == 'lagmon')
-          this.qandolat += num;
-        else if(a == 'gusht')
-          this.gusht +=num;
-        else this.ichimlik += num;
-        }
+//    qabul(a, num){
+//         if( a == 'lagmon')
+//           this.qandolat += num;
+//         else if(a == 'gusht')
+//           this.gusht +=num;
+//         else this.ichimlik += num;
+//         }
    
     
    
-   sotish(a, num){
-        if( a == 'lagmon')
-          this.qandolat -= num;
-        else if(a == 'gusht')
-          this.gusht -=num;
-        else this.ichimlik -= num;
-        }
-      qoldiq(){
-     console.log(`hozir ${time}da ${this.qandolat}kg lagmon ,${this.gusht}kg gusht  va ${this.ichimlik}ta cola mavjud  `);
-    }
-    }
-  const shop = new Shop(4,5,6);
-  shop.qoldiq();
-  shop.sotish('gusht',3 );
-  shop.qabul('lagmon', 1);
-  shop.qabul('cola', 8);
-  shop.qoldiq();
+//    sotish(a, num){
+//         if( a == 'lagmon')
+//           this.qandolat -= num;
+//         else if(a == 'gusht')
+//           this.gusht -=num;
+//         else this.ichimlik -= num;
+//         }
+//       qoldiq(){
+//      console.log(`hozir ${time}da ${this.qandolat}kg lagmon ,${this.gusht}kg gusht  va ${this.ichimlik}ta cola mavjud  `);
+//     }
+//     }
+//   const shop = new Shop(4,5,6);
+//   shop.qoldiq();
+//   shop.sotish('gusht',3 );
+//   shop.qabul('lagmon', 1);
+//   shop.qabul('cola', 8);
+//   shop.qoldiq();
   
 
 
