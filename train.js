@@ -1,15 +1,67 @@
-// F-TASK: 
 
-// Shunday findDoublers function tuzing,
-// unga faqat bitta string argument pass bolib,
-//  agar stringda bir hil harf qatnashgan bolsa true, qatnashmasa false qaytarishi kerak.
-// MASALAN: getReverse("hello") return true return qiladi
-function findDoublers(str) {
-     const a = str.split('').some((total, ele, arr) => total == arr[ele+1]);
- console.log(a)
+/*G-TASK: 
+
+Shunday function tuzingki unga integerlardan iborat array pass bolsin va function bizga osha arrayning eng katta qiymatiga tegishli birinchi indexni qaytarsin.
+MASALAN: getHighestIndex([5, 21, 12, 21, 8]) return qiladi 1 sonini.
+
+
+*/
+function getHighestIndex(arr) {
+    const highestIndex = arr.reduce((acc, cur, idx) => cur > arr[acc] ? idx : acc, 0);
+    console.log(highestIndex);
+    return highestIndex;
 }
 
-findDoublers('daddy');
+getHighestIndex([5, 21, 12, 21,44, 8]); 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // F-TASK: 
+
+// // Shunday findDoublers function tuzing,
+// // unga faqat bitta string argument pass bolib,
+// //  agar stringda bir hil harf qatnashgan bolsa true, qatnashmasa false qaytarishi kerak.
+// // MASALAN: getReverse("hello") return true return qiladi
+// function findDoublers(str) {
+//      const a = str.split('').some((total, ele, arr) => total == arr[ele+1]);
+//  console.log(a)
+// }
+
+// findDoublers('daddy');
  
 
 
