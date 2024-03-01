@@ -5,8 +5,6 @@ Shunday function tuzingki unga integerlardan iborat array pass bolsin va functio
 MASALAN: getHighestIndex([5, 21, 12, 21, 8]) return qiladi 1 sonini........
 //************************ */
 
-
-*/
 function getHighestIndex(arr) {
     const highestIndex = arr.reduce((acc, cur, idx) => cur > arr[acc] ? idx : acc, 0);
     console.log(highestIndex);
