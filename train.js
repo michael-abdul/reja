@@ -17,7 +17,7 @@ getHighestIndex([5, 21, 12, 21,44, 8]);
 
 
 
-
+///yangi darslar2
 
 
 
